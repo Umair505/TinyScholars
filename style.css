@@ -27,7 +27,7 @@ body{
 }
 .nav-container{
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 .navbar{
     display: flex;
@@ -38,7 +38,7 @@ body{
     max-height: 82px;
     padding: 15px 50px;
 }
-.btn{
+.btn,.contact-btn{
     padding: 13px 35px;
     border-radius: 9px;
     background: rgb(254, 163, 1);
@@ -76,6 +76,33 @@ hr{
 .banner{
     justify-content: center;
     align-items: center;
+    gap: 130px;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.banner-para{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.banner-container{
+    width: 512px;
+    height: 265px;
+}
+.empowering{
+    color: rgb(254, 163, 1);
+}
+
+.btn-black{
+    background-color: black;
+}
+.age{
+    color:rgb(1, 172, 253);
 }
 
 /* Responsive For Small Device */
@@ -90,7 +117,29 @@ hr{
         font-size: 26px;
         cursor: pointer; 
     }
-    
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .banner-title{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .banner-container{
+        text-align: center;
+        width: 285px;
+        height: 201px;
+        gap: 0px;
+        margin-bottom: 50px;
+    }
+    .banner-img{
+        width: 85%;
+        margin-left: 28px;
+    }
+    .banner-para{
+        text-align: center;
+        font-size: 0.7rem;
+    }
 
     
 }
