@@ -104,7 +104,67 @@ hr{
 .age{
     color:rgb(1, 172, 253);
 }
-
+/* Curriculum Section */
+.curriculum-section{
+    width: 928px;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.card{
+    width: 295px;
+    height: 382px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    padding: 42px 32px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card2 {
+    border: 0.94px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card3 {
+    border: 0.94px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: 
+        linear-gradient(180deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), 
+        url(images/bgVio.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.cur-title{
+    font-family: "Quicksand", serif;
+    font-size: 2.3rem;
+}
+.curriculum-section{
+    margin-top: 100px;
+}
+.read-more1{
+    font: 0.8rem ;
+    color: rgb(100, 200, 255);
+    font-weight: 700;
+    
+}
+.read-more2{
+    font: 0.8rem ;
+    color: rgb(240, 170, 0);
+    font-weight: 700;
+    
+}
+.read-more3{
+    font: 0.8rem ;
+    color: rgb(135, 0, 255);
+    font-weight: 700;
+    
+}
+.card-container{
+    display: flex;
+    gap: 20px;
+}
 /* Responsive For Small Device */
 @media screen and (max-width: 578px) {
     .nav-container,.contact-btn,.logo-title{
