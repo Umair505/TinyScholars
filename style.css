@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
+body{
+    margin: 0;
+    font-family: "Quicksand", serif;
+}
+
+/* Shared Style */
+.display-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Style */
+.nav-item{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+.nav-container{
+    display: flex;
+    gap: 25px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1152px;
+    max-height: 82px;
+    padding: 15px 50px;
+}
+.btn{
+    padding: 13px 35px;
+    border-radius: 9px;
+    background: rgb(254, 163, 1);
+    color: white;
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    background-color: rgb(237, 80, 23);
+}
+.home{
+    color: rgb(254, 163, 1);
+}
+.about{
+    color: rgb(14, 106, 187);
+}
+.facilities{
+    color: rgb(204, 58, 95);
+}
+.admission{
+    color: blueviolet;
+}
+.menu{
+    display: none;
+}
+hr{
+    box-sizing: border-box;
+    border: 0.5px solid rgb(254, 163, 1);
+}
+
+/* Banner Style */
+.banner{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive For Small Device */
+@media screen and (max-width: 578px) {
+    .nav-container,.contact-btn,.logo-title{
+        display: none;
+    }
+    .menu,hr{
+        display: flex ;
+    }
+    .menu i {
+        font-size: 26px;
+        cursor: pointer; 
+    }
+    
+
+    
+}
