@@ -195,7 +195,7 @@ hr{
     height: auto;
     padding: 50px 0;
     margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .story-box-container{
     display: flex;
@@ -283,7 +283,65 @@ hr{
     justify-content: center;
     margin-top: 80px;
 }
+/* Footer */
+footer{
+    background: linear-gradient(1.80deg, rgba(254, 133, 0, 0.7), rgba(255, 255, 255, 0.2) 100%);
+    color: rgba(33, 33, 33, 0.9);
 
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 857px;
+    height: auto;
+    margin: 0 auto;
+    gap: 140px;
+    padding: 80px ;
+}
+.footer-logo-title{
+    color: rgb(16, 161, 202);
+    font-family: "Quicksand", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.logo{
+    align-items: center;
+}
+.f-logo{
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+}
+.keep{
+    font: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3%;
+}
+.footer-img{
+    width: 69px;
+    height: 70px;
+}
+.logo-con{
+    width: 320px;
+    height: 80px;
+}
+.social-logo{
+    gap: 5px;
+}
+.sub{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.para2{
+        color: rgb(0, 0, 0);
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0%;
+        text-align: left;
+
+}
 /* Responsive For Small Device */
 @media screen and (max-width: 578px) {
     .nav-container,.contact-btn,.logo-title{
@@ -365,6 +423,7 @@ hr{
         width: 295px;
         padding: 5px;
         background: none;
+        margin-left: 20px;
     }
     .btn-c{
         position: absolute; 
@@ -375,8 +434,22 @@ hr{
     }
     .s{
         background: url('images/bg.png'), linear-gradient(1.80deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+        
     }
     .v{
         margin-top: 30px;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        gap: 30px;
+        padding: 10px ;
+    }
+    .logo-con{
+        width: 285px;
+        height: auto;
     }
 }
