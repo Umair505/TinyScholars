@@ -342,6 +342,21 @@ footer{
         text-align: left;
 
 }
+marquee {
+    font-family: "Quicksand", serif;
+    font-size: 1.2rem;
+    color: #333333;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: #ff9f1c;
+    font-weight: bold;
+}
 /* Responsive For Small Device */
 @media screen and (max-width: 578px) {
     .nav-container,.contact-btn,.logo-title{
@@ -397,7 +412,7 @@ footer{
         display: flex;
         flex-direction: column;
         width: 315px;
-        height: 615px;
+        height: 650px;
     }
     .story-box2{
         grid-template-columns: repeat(2,1fr);
@@ -434,7 +449,6 @@ footer{
     }
     .s{
         background: url('images/bg.png'), linear-gradient(1.80deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-        
     }
     .v{
         margin-top: 30px;
@@ -451,5 +465,8 @@ footer{
     .logo-con{
         width: 285px;
         height: auto;
+    }
+    marquee {
+        font-size: 1rem;
     }
 }
