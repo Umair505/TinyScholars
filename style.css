@@ -115,10 +115,13 @@ hr{
 /* Curriculum Section */
 .curriculum-section{
     width: 928px;
-    height: 500px;
+    height: auto;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
 }
 .card{
     width: 295px;
@@ -178,17 +181,21 @@ hr{
     width: 100%;
     height: 100%;
     border-radius: 16px 16px 0px 0px;
-    display: block;
  }
 .stories{
     width: 928px;
-    height: 505px;
+    height: 814px;
     margin: 0 auto;
     
 }
+/* Our Stories Section */
+
 .stories-section{
     background: url(images/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-    height: 720px;
+    height: auto;
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .story-box-container{
     display: flex;
@@ -200,6 +207,7 @@ hr{
     height: 505px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
+    padding-bottom: 30px;
 }
 
 .box-1-item{
@@ -215,9 +223,7 @@ hr{
     border-radius: 16px;
     background: rgb(255, 255, 255);
     width: 233px;
-    height: 242px;
-    position: relative;
-    display: inline-block;
+    height: 260px;
 }
 .para{
     color: rgb(102, 102, 102);
@@ -230,10 +236,7 @@ hr{
     font-size: 0.8rem;
     padding: 18px;
 }
-.box1{
-    position: relative;
-    display: inline-block;
-}
+
 
 .card-btn{
     border-radius: 47.93px;
@@ -243,36 +246,42 @@ hr{
     padding: 11.5px 15.34px;
     width: 160px;
     height: 38px;   
-    margin-top: -190px; 
-    margin-left: 30px;
+}
+.box1,.box-2{
+    position: relative;
 }
 .btn1{
-    position: absolute; 
-    left: 0%; 
-    transform: translateY(450%);
     background: rgb(93, 88, 240);
+    position: absolute; 
+    top: 98%; 
+    left: 25%; 
+    transform: translate(-50%, -50%);
+}
+.btn-c{
+    position: absolute; 
+    top: 98%; 
+    left: 45%; 
+    transform: translate(-50%, -50%);
 }
 .btn2{
-    position: absolute; 
-    left: 0%; 
-    transform: translateY(450%);
     background: rgb(227, 224, 224);
     color: black;
+
 }
 .btn3{
-    position: absolute; 
-    left: 0%; 
-    transform: translateY(450%);
     background: rgb(131, 216, 105);
 }
 .btn4{
-    position: absolute; 
-    left: 0%; 
-    transform: translateY(450%);
     background: rgb(65, 146, 204);
 }
 .btn5{
     background: rgb(177, 115, 149);
+}
+
+.v{
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
 }
 
 /* Responsive For Small Device */
@@ -317,10 +326,57 @@ hr{
     .cur-title{
         font-size: 1.8rem;
     }
+    .display-none{
+        display: none;
+    }
     .curriculum-section{
         width: 300px;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
+    }
+    .stories{
+        display: flex;
+        flex-direction: column;
+        width: 315px;
+        height: 615px;
+    }
+    .story-box2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .box2-card{
+        width: 143px;
+        height: 200px;
+
+    }
+    .card-btn{
+        font-size: 8px;  
+        width: 100px;
+        height: 30px;   
+        margin-top: -50px; 
+        margin-left: 0px;
+    }
+    .card-sub{
+        font-size: 11px;
+        margin-top: 0%;
+    }
+    .stories-section{
+        width: 295px;
+        padding: 5px;
+        background: none;
+    }
+    .btn-c{
+        position: absolute; 
+        top: 147%; 
+        left: 48%;
+        padding-right: 10px; 
+        transform: translate(-50%, -50%);
+    }
+    .s{
+        background: url('images/bg.png'), linear-gradient(1.80deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    }
+    .v{
+        margin-top: 30px;
     }
 }
